@@ -187,7 +187,7 @@
             right: -300px;
             width: 250px;
             height: 100%;
-            background-color: #1A1A24;
+            background-color: #000;
             transition: 0.3s;
             z-index: 2000;
             padding: 20px;
@@ -200,11 +200,17 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 30px;
+            padding: 5px 15px;
+            border-radius: 50px;
+            margin-bottom: 50px;
+            background-color: #ff3300;
         }
         .close-menu {
-            color: #fff;
-            font-size: 24px;
+            background-color: #fff;
+            color: #ff3300;
+            font-size: 28px;
+            padding: 0px 4px;
+            border-radius: 50px;
             cursor: pointer;
         }
         .social-media-list {
@@ -252,9 +258,10 @@
             z-index: 3000;
         }
         .wallet-popup {
-            background: #1A1A24;
+            background: #000;
             padding: 25px;
             border-radius: 15px;
+            border: 1px solid #ccc;
             width: 90%;
             max-width: 400px;
             text-align: center;
@@ -307,7 +314,7 @@
     <div class="menu-overlay" id="menuOverlay"></div>
     <div class="sidebar-menu" id="sidebarMenu">
         <div class="menu-header">
-            <h3 style="color: #fff">Menu</h3>
+            <h3 style="color: #fff"><i class="fas fa-stream"></i></h3>
             <div class="close-menu" onclick="closeMenu()" aria-label="Close settings menu">×</div>
         </div>
         <ul class="social-media-list">
